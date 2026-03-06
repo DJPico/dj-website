@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DJ PAGE</title>
+<title>DJ Pico</title>
 
 <style>
 
 body{
-font-family: Arial;
-background:#0b0b0b;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#0a0a0a;
 color:white;
 text-align:center;
-margin:0;
 }
 
 header{
-padding:40px;
 background:black;
+padding:40px;
+}
+
+header h1{
+font-size:42px;
+letter-spacing:3px;
 }
 
 nav a{
@@ -28,7 +33,35 @@ font-size:18px;
 }
 
 section{
-padding:60px 20px;
+padding:70px 20px;
+}
+
+.hero{
+font-size:22px;
+}
+
+iframe{
+max-width:90%;
+}
+
+.social a{
+display:inline-block;
+margin:10px;
+color:white;
+text-decoration:none;
+font-size:18px;
+}
+
+form{
+margin-top:20px;
+}
+
+input, textarea{
+width:80%;
+max-width:400px;
+padding:12px;
+margin:10px;
+border:none;
 }
 
 button{
@@ -40,89 +73,100 @@ font-size:16px;
 cursor:pointer;
 }
 
-input, textarea{
-width:80%;
-max-width:400px;
-margin:10px;
-padding:10px;
+footer{
+padding:30px;
+background:black;
+margin-top:40px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
-<h1>DJ NAME</h1>
+
+<h1>DJ Pico</h1>
 
 <nav>
+<a href="#about">About</a>
+<a href="#video">Latest Set</a>
 <a href="#events">Events</a>
-<a href="#media">Media</a>
 <a href="#booking">Booking</a>
 </nav>
+
 </header>
 
+<section class="hero" id="about">
 
-<section>
+<p>🎧 Hobby DJ from Carinthia, Austria</p>
+<p>🎶 Genres: From Classical to EDM</p>
 
-<h2>Latest Set</h2>
+</section>
+
+<section id="video">
+
+<h2>Latest Video</h2>
 
 <iframe width="560" height="315"
-src="https://www.youtube.com/embed/YOUTUBEID"
+src="https://www.youtube.com/embed/"
 frameborder="0"
 allowfullscreen>
 </iframe>
 
 </section>
 
-
 <section id="events">
 
 <h2>Upcoming Events</h2>
 
-<p>12.04 – Club XYZ – Vienna</p>
-<p>30.04 – Techno Night – Graz</p>
+<p>No events announced yet</p>
 
 </section>
 
+<section class="social">
 
-<section id="media">
+<h2>Follow DJ Pico</h2>
 
-<h2>Follow</h2>
+<a href="https://www.instagram.com/djpico_official/">Instagram</a>
 
-<p>
-<a href="#">Instagram</a> |
-<a href="#">SoundCloud</a> |
-<a href="#">YouTube</a>
-</p>
+<br>
+
+<a href="https://www.youtube.com/@djpico-offical">YouTube</a>
 
 </section>
-
 
 <section id="booking">
 
 <h2>Booking</h2>
 
-<form action="https://formspree.io/f/yourID" method="POST">
+<p>Email: Djpico@gmx.at</p>
 
-<input type="text" name="name" placeholder="Name" required>
+<form action="mailto:Djpico@gmx.at" method="post">
 
-<br>
-
-<input type="email" name="email" placeholder="Email" required>
+<input type="text" placeholder="Name">
 
 <br>
 
-<textarea name="message" placeholder="Event details"></textarea>
+<input type="email" placeholder="Email">
 
 <br>
 
-<button type="submit">Send</button>
+<textarea placeholder="Event details"></textarea>
+
+<br>
+
+<button type="submit">Send Booking Request</button>
 
 </form>
 
 </section>
+
+<footer>
+
+<p>© 2026 DJ Pico</p>
+
+</footer>
 
 </body>
 </html>
