@@ -5,25 +5,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DJ Pico</title>
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#0a0a0a;
+background:#050505;
 color:white;
 text-align:center;
 }
 
+/* HEADER */
+
 header{
 background:black;
-padding:40px;
+padding:30px;
+border-bottom:2px solid #00f7ff;
 }
 
 header h1{
 font-size:42px;
-letter-spacing:3px;
+letter-spacing:4px;
+color:#00f7ff;
 }
+
+.logo{
+width:120px;
+margin-bottom:10px;
+}
+
+/* NAV */
 
 nav a{
 color:white;
@@ -32,25 +46,81 @@ text-decoration:none;
 font-size:18px;
 }
 
+nav a:hover{
+color:#00f7ff;
+}
+
+/* SECTIONS */
+
 section{
 padding:70px 20px;
 }
 
+/* HERO */
+
 .hero{
 font-size:22px;
+background:linear-gradient(180deg,#000,#0a0a0a);
+}
+
+/* VIDEO */
+
+.video-preview{
+width:80%;
+max-width:700px;
+border-radius:10px;
+box-shadow:0 0 20px #00f7ff;
+margin-bottom:20px;
 }
 
 iframe{
 max-width:90%;
 }
 
+/* EVENTS */
+
+.event{
+font-size:20px;
+margin:15px;
+padding:15px;
+border:1px solid #00f7ff;
+border-radius:10px;
+box-shadow:0 0 10px #00f7ff;
+}
+
+/* SOCIAL */
+
 .social a{
 display:inline-block;
 margin:10px;
-color:white;
+padding:12px 20px;
+background:#00f7ff;
+color:black;
 text-decoration:none;
 font-size:18px;
+border-radius:6px;
 }
+
+.social a:hover{
+box-shadow:0 0 15px #00f7ff;
+}
+
+/* INSTAGRAM */
+
+.instagram-feed{
+margin-top:30px;
+}
+
+/* GALLERY */
+
+.gallery img{
+width:260px;
+margin:15px;
+border-radius:10px;
+box-shadow:0 0 15px #00f7ff;
+}
+
+/* FORM */
 
 form{
 margin-top:20px;
@@ -62,21 +132,30 @@ max-width:400px;
 padding:12px;
 margin:10px;
 border:none;
+border-radius:5px;
 }
 
 button{
 padding:12px 25px;
 border:none;
-background:#ff0066;
-color:white;
+background:#00f7ff;
+color:black;
 font-size:16px;
 cursor:pointer;
+border-radius:5px;
 }
+
+button:hover{
+box-shadow:0 0 15px #00f7ff;
+}
+
+/* FOOTER */
 
 footer{
 padding:30px;
 background:black;
 margin-top:40px;
+border-top:2px solid #00f7ff;
 }
 
 </style>
@@ -86,12 +165,15 @@ margin-top:40px;
 
 <header>
 
+<img class="logo" src="pictures/logonew.png">
+
 <h1>DJ Pico</h1>
 
 <nav>
 <a href="#about">About</a>
 <a href="#video">Latest Set</a>
 <a href="#events">Events</a>
+<a href="#gallery">Gallery</a>
 <a href="#booking">Booking</a>
 </nav>
 
@@ -106,11 +188,15 @@ margin-top:40px;
 
 <section id="video">
 
-<h2>Latest Video</h2>
+<h2>Latest Set</h2>
+
+<img class="video-preview"
+src="pictures/dj pico video screenshoot 2.jpg">
+
+<br>
 
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/"
-frameborder="0"
 allowfullscreen>
 </iframe>
 
@@ -120,7 +206,9 @@ allowfullscreen>
 
 <h2>Upcoming Events</h2>
 
-<p>No events announced yet</p>
+<div class="event">
+📅 23.05 – SC Au am Leitenbergel – Zeltfest
+</div>
 
 </section>
 
@@ -128,11 +216,36 @@ allowfullscreen>
 
 <h2>Follow DJ Pico</h2>
 
-<a href="https://www.instagram.com/djpico_official/">Instagram</a>
+<a href="https://www.instagram.com/djpico_official/">
+<i class="fa-brands fa-instagram"></i> Instagram
+</a>
 
-<br>
+<a href="https://www.youtube.com/@djpico-offical">
+<i class="fa-brands fa-youtube"></i> YouTube
+</a>
 
-<a href="https://www.youtube.com/@djpico-offical">YouTube</a>
+</section>
+
+<section class="instagram-feed">
+
+<h2>Instagram</h2>
+
+<iframe
+src="https://www.instagram.com/djpico_official/embed"
+width="400"
+height="480"
+frameborder="0">
+</iframe>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+<h2>DJ Pico Gallery</h2>
+
+<img src="pictures/dj1.jpg">
+<img src="pictures/dj2.jpg">
+<img src="pictures/dj3.jpg">
 
 </section>
 
