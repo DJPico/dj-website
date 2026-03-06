@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ PAGE</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#0b0b0b;
+color:white;
+text-align:center;
+margin:0;
+}
+
+header{
+padding:40px;
+background:black;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+section{
+padding:60px 20px;
+}
+
+button{
+padding:12px 25px;
+border:none;
+background:#ff0066;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+input, textarea{
+width:80%;
+max-width:400px;
+margin:10px;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>DJ NAME</h1>
+
+<nav>
+<a href="#events">Events</a>
+<a href="#media">Media</a>
+<a href="#booking">Booking</a>
+</nav>
+</header>
+
+
+<section>
+
+<h2>Latest Set</h2>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/YOUTUBEID"
+frameborder="0"
+allowfullscreen>
+</iframe>
+
+</section>
+
+
+<section id="events">
+
+<h2>Upcoming Events</h2>
+
+<p>12.04 – Club XYZ – Vienna</p>
+<p>30.04 – Techno Night – Graz</p>
+
+</section>
+
+
+<section id="media">
+
+<h2>Follow</h2>
+
+<p>
+<a href="#">Instagram</a> |
+<a href="#">SoundCloud</a> |
+<a href="#">YouTube</a>
+</p>
+
+</section>
+
+
+<section id="booking">
+
+<h2>Booking</h2>
+
+<form action="https://formspree.io/f/yourID" method="POST">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<br>
+
+<input type="email" name="email" placeholder="Email" required>
+
+<br>
+
+<textarea name="message" placeholder="Event details"></textarea>
+
+<br>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+</body>
+</html>
